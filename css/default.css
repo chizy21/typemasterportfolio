@@ -1,0 +1,150 @@
+:root {
+  --bg: #fff;
+  --bg-panel: #fff;
+  --color-headings: #162542;
+  --color-text-opacity: rgba(22, 28, 45, 0.7);
+  --color-text: #162542;
+  --color-text-base: #162542;
+  --border: #383f53;
+  --btn1-primary: #f16718;
+  --btn1-hover: #ff9b62;
+  --color-grey: #7b8bad;
+  --btn2-primary: #e8eff2;
+  --btn2-hover: #000000;
+  --color-white: #ffffff;
+  --color-black: #000000;
+}
+
+section,
+footer,
+header,
+main,
+nav {
+  display: block;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--color-text);
+  background-color: var(--bg);
+  text-align: left;
+}
+
+a {
+  color: #495fef;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-headings);
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  line-height: 58px;
+  font-size: 56px;
+  text-transform: uppercase;
+}
+
+h2 {
+  line-height: 36px;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+h3 {
+  line-height: 28px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+p {
+  margin-top: 0;
+}
+
+button {
+  outline: none;
+}
+
+.container,
+.container-fixed {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  max-width: 1140px;
+}
+
+.btn {
+  font-weight: 700;
+  min-width: 175px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 1.63px;
+  transition: 0.4s;
+  height: 65px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.btn:not(:disabled):not(.disabled),
+button:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.btn-primary,
+.btn-primary a {
+  color: #fff;
+  background-color: var(--btn1-primary);
+  border: 1px solid var(--btn1-primary);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary a:hover,
+.btn-primary a:focus,
+.btn-primary a:active {
+  color: #fff;
+  background-color: var(--btn1-hover);
+  border: 1px solid var(--btn1-hover);
+}
+
+.btn-secondary,
+.btn-secondary a {
+  color: var(--color-text);
+  background-color: var(--btn2-primary);
+  border: 1px solid var(--btn2-primary);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active,
+.btn-secondary a:hover,
+.btn-secondary a:focus,
+.btn-secondary a:active {
+  color: var(--color-text);
+  background-color: var(--btn2-hover);
+  border: 1px solid var(--btn2-hover);
+}
