@@ -1,15 +1,18 @@
-@media (min-width: 640px) {
-
+@media (max-width: 640px) {
+  .keyboard-pics {
+    justify-content: center;
+  }
+  .features {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
-@media (min-width: 768px) {
-
+@media (max-width: 768px) {
 }
 
 @media (min-width: 1024px) {
-
 }
 
 @media (min-width: 1280px) {
-
 }

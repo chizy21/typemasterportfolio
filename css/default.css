@@ -1,5 +1,5 @@
 :root {
-  --bg: #fff;
+  --bg: #f2f2f2;
   --bg-panel: #fff;
   --color-headings: #162542;
   --color-text-opacity: rgba(22, 28, 45, 0.7);
@@ -77,21 +77,11 @@ p {
   margin-top: 0;
 }
 
-button {
-  outline: none;
-}
-
-.container,
-.container-fixed {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .container {
   max-width: 1140px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn {
@@ -118,6 +108,7 @@ button:not(:disabled):not(.disabled) {
   color: #fff;
   background-color: var(--btn1-primary);
   border: 1px solid var(--btn1-primary);
+  border-radius: 5px;
 }
 
 .btn-primary:hover,
@@ -136,6 +127,7 @@ button:not(:disabled):not(.disabled) {
   color: var(--color-text);
   background-color: var(--btn2-primary);
   border: 1px solid var(--btn2-primary);
+  border-radius: 5px;
 }
 
 .btn-secondary:hover,
